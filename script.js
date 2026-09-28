@@ -20,7 +20,7 @@ const songs = [
     {name: 'Earrings', artist: 'Malcolm Todd', src: 'songs/earrings.mp3'},
     {name: 'Sunflower', artist: 'Post Malone', src: 'songs/sunflower.mp3'},
     {name: 'Cicada', artist: 'Good Kid', src: 'songs/Cicada.mp3'},
-    {name: 'Stupid Song', artist: 'Olivia Rodrigo', src: 'songs/stupidSong.mp3'}
+    {name: 'Stupid Song', artist: 'Olivia Rodrigo', src: 'songs/StupidSong.mp3'}
 ];
 
 let songIndex = 0;
