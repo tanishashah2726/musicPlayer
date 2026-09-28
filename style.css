@@ -1,0 +1,129 @@
+:root{
+    --offwhite: #f4ecdd;
+    --dark-sage-green: #629460;
+    --dusty-olive: #74835A;
+    --gray-green: #a4a377;
+    --brown-gray: #423826;
+    --hunter: #43633d;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Bradley Hand', cursive;
+    border: none;
+    outline: none;
+}
+
+body{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg, var(--dusty-olive), var(--hunter));
+}
+
+.player{
+    background: var(--offwhite);
+    padding: 80px 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border: 5px solid var(--brown-gray);
+}
+
+.cover{
+    height: 250px;
+    width: 250px;
+    border-radius: 10%;
+    border: 5px solid var(--brown-gray);
+}
+
+.controls{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.controls button{
+    background: none;
+    border: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-top: 10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.controls button:hover{
+    transform: scale(1.2);
+}
+
+.controls .play-btn{
+    color: var(--offwhite);
+    width: 25px;
+    height: 25px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.controls button img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.progress, .volume{
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+}
+
+.volume{
+    gap: 10px;
+    color: var(--dark-sage-green);
+    border: none;
+    outline: none;
+}
+
+.vol-icon{
+    height: 20px;
+    width: 30px;
+}
+
+input[type="range"]{
+    width: 100%;
+    cursor: pointer;
+    accent-color: var(--dusty-olive);
+    border: none;
+    outline: none;
+}
+
+.progress-container {
+    width: 100%;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+    padding: 0 2px;
+}
